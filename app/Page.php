@@ -19,6 +19,10 @@ class Page extends Model
     }
 
     public function getSections() {
-        return PageSection::where('page_id', $this->id)->get();
+        $sections = [];
+        foreach (PageSection::where('page_id', $this->id)->get() as $page_section) {
+            array_push($sections, Section::find($page_section->section_id));
+        }
+        return $sections;
     }
 }

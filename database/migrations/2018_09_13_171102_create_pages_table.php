@@ -17,6 +17,7 @@ class CreatePagesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('type')->default(0); // 0 Others, 1 Menu, 2 Submenu
+            $table->bigInteger('views')->default(0); //increment every time this page is loaded
             $table->unsignedInteger('parent_id')->nullable();
             $table->foreign('parent_id')->references('id')->on('pages');
             $table->timestamps();
