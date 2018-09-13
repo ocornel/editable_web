@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace EditableWeb\Http\Controllers;
 
-use App\PageSection;
+use EditableWeb\PageSection;
 use Illuminate\Http\Request;
 
 class PageSectionController extends Controller
@@ -41,7 +41,7 @@ class PageSectionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\PageSection  $pageSection
+     * @param  \EditableWeb\PageSection  $pageSection
      * @return \Illuminate\Http\Response
      */
     public function show(PageSection $pageSection)
@@ -52,7 +52,7 @@ class PageSectionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\PageSection  $pageSection
+     * @param  \EditableWeb\PageSection  $pageSection
      * @return \Illuminate\Http\Response
      */
     public function edit(PageSection $pageSection)
@@ -64,7 +64,7 @@ class PageSectionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\PageSection  $pageSection
+     * @param  \EditableWeb\PageSection  $pageSection
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, PageSection $pageSection)
@@ -75,7 +75,7 @@ class PageSectionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\PageSection  $pageSection
+     * @param  \EditableWeb\PageSection  $pageSection
      * @return \Illuminate\Http\Response
      */
     public function destroy(PageSection $pageSection)
